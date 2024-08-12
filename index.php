@@ -4,7 +4,7 @@ $api_key = '74d82695097c9ae636753594abe9b543'; // Replace with your actual IPinf
 
 // Define the URLs for redirection
 $residence_url = 'https://roastandrelish.store';
-$amazon_url = 'https://www.amazon.com/Simple-Joys-Carters-Short-Sleeve-Bodysuit/dp/B07GY1RRZF?ref=ast_sto_dp&th=1&psc=1';
+$amazon_url = 'https://www.amazon.com/Simple-Joys-Carters-Short-Sleeve-Bodysuit/dp/B07GY1RRZF';
 
 // Function to get the user's IP address
 function getUserIP() {
