@@ -10,15 +10,14 @@ $amazon_url = 'https://www.amazon.com/Simple-Joys-Carters-Short-Sleeve-Bodysuit/
 function getUserIP() {
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         // Check if IP is passed from shared internet
-        $ip = $_SERVER['HTTP_CLIENT_IP'];
+        return $_SERVER['HTTP_CLIENT_IP'];
     } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         // Check if IP is passed from proxy
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        return $_SERVER['HTTP_X_FORWARDED_FOR'];
     } else {
         // Get IP address
-        $ip = $_SERVER['REMOTE_ADDR'];
+        return $_SERVER['REMOTE_ADDR'];
     }
-    return $ip;
 }
 
 $user_ip = getUserIP();
